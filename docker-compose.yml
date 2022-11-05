@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  teste-postgres-compose:
+    image: postgres
+    environment:
+      # POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "Mr231187"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home
+# COMANDO PARA LISTAR PROCESSOS RODANDO EM UMA PORTA ESPECIFICA
+# lsof -w -n -i tcp:8080
+
+# Comando para parar o postgresql
+# sudo systemctl stop postgresql
